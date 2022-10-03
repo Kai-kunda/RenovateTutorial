@@ -7,23 +7,23 @@
     {
       "matchLanguages": ["php"],
       "matchUpdateTypes": ["major"],
-      "groupName": "PHP package update"
+      "groupName": "dependency php"
     },
     {
       "matchLanguages": ["php"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
-      "groupName": "PHP package update (auto merge)"
+      "groupName": "dependency php (auto merge)"
     },
     {
       "matchLanguages": ["js"],
       "matchUpdateTypes": ["major"],
-      "groupName": "JS package update",
+      "groupName": "dependency js",
       "lockFileMaintenance": { "enabled": true }
     },
     {
       "matchLanguages": ["js"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
-      "groupName": "JS package update (auto merge)",
+      "groupName": "dependency js (auto merge)",
       "lockFileMaintenance": { "enabled": true }
     }
   ]
