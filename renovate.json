@@ -10,8 +10,8 @@
     },
     {
       "matchLanguages": ["php"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "bump"],
-      "groupName": "PHP package update test"
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "PHP package update (auto merge)"
     },
     {
       "matchLanguages": ["js"],
@@ -21,8 +21,8 @@
     },
     {
       "matchLanguages": ["js"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "bump"],
-      "groupName": "JS package update test",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "JS package update (auto merge)",
       "lockFileMaintenance": { "enabled": true }
     }
   ]
