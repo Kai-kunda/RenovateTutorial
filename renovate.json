@@ -2,6 +2,7 @@
   "enabledManagers": ["composer", "npm"],
   "separateMajorMinor": false,
   "timezone": "Asia/Tokyo",
+  "schedule": "0 0 * * 1",
   "packageRules": [
     {
       "matchLanguages": ["php"],
