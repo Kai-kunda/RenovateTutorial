@@ -1,0 +1,32 @@
+{
+  "extends": ["schedule:earlyMondays"],
+  "enabledManagers": ["composer", "npm"],
+  "separateMajorMinor": false,
+  "timezone": "Asia/Tokyo",
+  "packageRules": [
+    {
+      "matchLanguages": ["php"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "dependency php"
+    },
+    {
+      "matchLanguages": ["php"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "dependency php (auto merge)",
+      "automerge": true
+    },
+    {
+      "matchLanguages": ["js"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "dependency js",
+      "lockFileMaintenance": { "enabled": true }
+    },
+    {
+      "matchLanguages": ["js"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "dependency js (auto merge)",
+      "lockFileMaintenance": { "enabled": true },
+      "automerge": true
+    }
+  ]
+}
