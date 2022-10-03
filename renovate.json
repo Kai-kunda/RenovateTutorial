@@ -9,9 +9,20 @@
       "groupName": "PHP package update"
     },
     {
+      "matchLanguages": ["php"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "PHP package update test"
+    },
+    {
       "matchLanguages": ["js"],
       "matchUpdateTypes": ["major"],
       "groupName": "JS package update",
+      "lockFileMaintenance": { "enabled": true }
+    },
+    {
+      "matchLanguages": ["js"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "groupName": "JS package update test",
       "lockFileMaintenance": { "enabled": true }
     }
   ]
