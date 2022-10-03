@@ -11,6 +11,6 @@
       "matchLanguages": ["js"],
       "groupName": "JS package update",
       "lockFileMaintenance": { "enabled": true }
-    },
+    }
   ]
 }
