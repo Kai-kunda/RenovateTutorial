@@ -1,13 +1,16 @@
 {
-  "extends": ["group:all"],
   "enabledManagers": ["composer", "npm"],
+  "separateMajorMinor": false,
   "timezone": "Asia/Tokyo",
-  "js": {
-    "groupName": "JS package update",
-    "managerBranchPrefix": "js-"
-  },
-  "php": {
-    "groupName": "PHP package update",
-    "managerBranchPrefix": "php-"
-  }
+  "packageRules": [
+    {
+      "matchLanguages": ["php"],
+      "groupName": "PHP package update"
+    },
+    {
+      "matchLanguages": ["js"],
+      "groupName": "JS package update",
+      "lockFileMaintenance": { "enabled": true }
+    }
+  ]
 }
