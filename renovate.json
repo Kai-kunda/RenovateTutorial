@@ -10,7 +10,7 @@
     },
     {
       "matchLanguages": ["php"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "bump"],
       "groupName": "PHP package update test"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "matchLanguages": ["js"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "bump"],
       "groupName": "JS package update test",
       "lockFileMaintenance": { "enabled": true }
     }
