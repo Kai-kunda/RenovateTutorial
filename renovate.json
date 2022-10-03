@@ -3,9 +3,11 @@
   "enabledManagers": ["composer", "npm"],
   "timezone": "Asia/Tokyo",
   "js": {
+    "groupName": "JS package update",
     "managerBranchPrefix": "js-"
   },
   "php": {
+    "groupName": "PHP package update",
     "managerBranchPrefix": "php-"
   }
 }
