@@ -5,10 +5,12 @@
   "packageRules": [
     {
       "matchLanguages": ["php"],
+      "matchUpdateTypes": ["major"],
       "groupName": "PHP package update"
     },
     {
       "matchLanguages": ["js"],
+      "matchUpdateTypes": ["major"],
       "groupName": "JS package update",
       "lockFileMaintenance": { "enabled": true }
     }
