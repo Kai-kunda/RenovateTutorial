@@ -12,7 +12,8 @@
     {
       "matchLanguages": ["php"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
-      "groupName": "dependency php (auto merge)"
+      "groupName": "dependency php (auto merge)",
+      "automerge": true
     },
     {
       "matchLanguages": ["js"],
@@ -24,7 +25,8 @@
       "matchLanguages": ["js"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance", "bump"],
       "groupName": "dependency js (auto merge)",
-      "lockFileMaintenance": { "enabled": true }
+      "lockFileMaintenance": { "enabled": true },
+      "automerge": true
     }
   ]
 }
