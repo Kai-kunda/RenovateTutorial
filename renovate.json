@@ -5,12 +5,27 @@
   "packageRules": [
     {
       "matchLanguages": ["php"],
-      "groupName": "PHP package update"
+      "matchUpdateTypes": ["major"],
+      "groupName": "PHP package update [major]"
+    },
+    {
+      "matchLanguages": ["php"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "PHP package update [minor, patch, pin, digest]",
+      "automerge": true
     },
     {
       "matchLanguages": ["js"],
-      "groupName": "JS package update",
+      "matchUpdateTypes": ["major"],
+      "groupName": "JS package update [major]",
       "lockFileMaintenance": { "enabled": true }
+    },
+    {
+      "matchLanguages": ["js"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "JS package update [minor, patch, pin, digest]",
+      "lockFileMaintenance": { "enabled": true },
+      "automerge": true
     }
   ]
 }
